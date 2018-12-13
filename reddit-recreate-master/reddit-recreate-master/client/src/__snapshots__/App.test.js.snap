@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App fetch correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="header"
+  >
+    <img
+      alt="logo"
+      src="logo.png"
+    />
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="users-list"
+    >
+      <ul />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`App periodic fetch correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="header"
+  >
+    <img
+      alt="logo"
+      src="logo.png"
+    />
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="users-list"
+    >
+      <ul />
+    </div>
+  </div>
+</div>
+`;

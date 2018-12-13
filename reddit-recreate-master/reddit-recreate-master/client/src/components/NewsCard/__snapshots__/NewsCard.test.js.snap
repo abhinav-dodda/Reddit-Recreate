@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsCard matches snapshot 1`] = `
+<div
+  className="news-card shadow hide"
+>
+  <div
+    className="author-image"
+  />
+  <div
+    className="news-body"
+  >
+    <div
+      className="news-header"
+    >
+      <h5
+        className="news-author"
+      >
+        Posted by 
+        <span>
+            
+        </span>
+      </h5>
+    </div>
+    <div
+      className="news-info"
+    >
+      <a
+        className="news-title"
+        href="https://www.reddit.comnull"
+      />
+      <p>
+        <a
+          className="news-url"
+          href={null}
+        />
+      </p>
+    </div>
+  </div>
+</div>
+`;
