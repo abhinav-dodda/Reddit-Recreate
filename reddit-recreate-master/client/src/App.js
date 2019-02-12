@@ -16,7 +16,7 @@ export default class App extends Component {
       intervalID: 0,
       news_count: 0
     }
-    this.handleScroll = throttle(this.handleScroll, 300)
+    this.handleScroll = throttle(this.handleScroll, 50)
   }
 
   componentDidMount = () => {
@@ -27,7 +27,7 @@ export default class App extends Component {
     let timer_id = setInterval(function(){      
       self.fetchPeriod();
     }, 60 * 1000);
-
+    console.log(timer_id);
     this.setState({intervalID: timer_id});
   }
 
@@ -35,7 +35,6 @@ export default class App extends Component {
     this.setState({ loading: true })
     let count = this.state.news_count;
     let api_path = "https://www.reddit.com/r/news.json?limit=" + count;
-
     const res = await fetch(api_path)
     const parseRes = await res.json()
 
@@ -148,7 +147,7 @@ export default class App extends Component {
         <div className="header">
           <img src={logo} alt="logo" />
         </div>
-        <div className="container">         
+        <div className="container">
           <NewsList {...this.state} />
         </div>
       </div>
